@@ -1,0 +1,97 @@
+:root {
+  --bg: #ffffff;
+  --text: #141414;
+  --muted: #555555;
+  --line: #d9d9d9;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: "Manrope", sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; overflow-x: hidden; }
+.container { width: min(1120px, 92%); margin: 0 auto; }
+
+/* Вертикальные отступы секций увеличена для "воздуха" */
+.section { padding: 120px 0; }
+
+.header { position: sticky; top: 0; z-index: 100; background: #000; padding: 15px 0; }
+.logo img { height: 34px; display: block; }
+
+/* Центрированный Hero с Montserrat */
+.hero { padding-top: 100px; padding-bottom: 60px; }
+.hero-text { text-align: center; display: flex; flex-direction: column; align-items: center; }
+
+.badge { 
+  display: inline-flex; 
+  border: 1px solid var(--line); 
+  background: #f7f7f7; 
+  border-radius: 999px; 
+  font-size: 0.84rem; 
+  padding: 8px 16px; 
+  margin-bottom: 24px; /* Увеличен отступ */
+}
+
+.hero h1 { 
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 800; 
+  text-transform: uppercase; 
+  letter-spacing: -0.02em; 
+  font-size: clamp(2.5rem, 7vw, 5rem); /* Увеличенный размер */
+  line-height: 1.0; 
+  margin-bottom: 32px; /* Увеличен отступ */
+}
+
+.hero-text > p { 
+  max-width: 620px; 
+  color: var(--muted); 
+  margin-bottom: 60px; /* Увеличен отступ до кнопок */
+  margin-left: auto; 
+  margin-right: auto; 
+  font-size: 1.1rem;
+}
+
+.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+
+.btn { border-radius: 50px; padding: 16px 32px; font-weight: 700; text-decoration: none; transition: 0.3s; cursor: pointer; border: none; }
+.btn-primary { color: #fff; background: #000; }
+.btn-light { border: 1px solid var(--line); color: var(--text); background: #fff; }
+.btn:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+
+/* Timeline - выровнен по левому краю */
+.timeline { border-left: 2px solid #000; padding-left: 40px; margin-left: 20px; text-align: left; max-width: 800px; margin-top: 40px; }
+.timeline-item { position: relative; margin-bottom: 100px; } /* Расстояние между годами */
+.timeline-item::before { content: ''; position: absolute; left: -49px; top: 8px; width: 16px; height: 16px; background: #000; border-radius: 50%; }
+.year-badge { font-weight: 800; color: #999; font-size: 1.3rem; margin-bottom: 8px; display: block; }
+.timeline-item h2 { margin-bottom: 12px; }
+.italic-text { margin-top: 15px; font-style: italic; color: #555; }
+.btn-link { display: inline-block; margin-top: 10px; color: #000; font-weight: 700; text-decoration: underline; }
+
+/* Центрированные заголовки */
+.section-title { text-align: center; margin-bottom: 60px; }
+.section-title h2 { font-size: 2.5rem; margin-bottom: 15px; }
+
+/* Сетка галереи */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 30px; }
+.memory-card { 
+  background: #fff; 
+  padding: 20px; 
+  border-radius: 24px; 
+  border: 1px solid #f0f0f0; 
+  box-shadow: var(--shadow); 
+  transition: 0.3s;
+}
+.memory-card:hover { transform: translateY(-5px); }
+
+/* Цитаты */
+.friends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
+.friend-note { padding: 30px; border: 1px solid var(--line); border-radius: 24px; background: #fdfdfd; }
+.friend-note cite { display: block; margin-top: 20px; font-weight: 700; font-style: normal; color: #888; }
+
+.footer { padding: 60px 0; border-top: 1px solid var(--line); text-align: center; color: var(--muted); }
+
+.reveal { opacity: 0; transform: translateY(30px); transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.lightbox { border: none; border-radius: 24px; padding: 20px; max-width: 900px; width: 95%; margin: auto; }
+.lightbox::backdrop { background: rgba(0,0,0,0.9); }
+.lightbox-close { position: absolute; top: 20px; right: 20px; border: none; background: #fff; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; }

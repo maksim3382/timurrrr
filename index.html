@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тимур Магжанов | Коробочка воспоминаний</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="logo" aria-label="На главную">
+        <img src="assets/logo.png" alt="Логотип проекта" />
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <p class="badge">Твоя коробочка воспоминаний</p>
+          <h1>О Пресс-центре <br />ППОО ПетрГУ</h1>
+          <p>
+            Тимур, этот путь был насыщенным: от стеснительного первокурсника до руководителя большой медиакоманды. 
+            Этот сайт — история о росте, дружбе и моментах, которые останутся навсегда.
+          </p>
+          <div class="hero-actions">
+            <a href="#history" class="btn btn-primary">Листать историю</a>
+            <a href="#memories-section" class="btn btn-light">Фото на память</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="history">
+      <div class="container">
+        <div class="section-title">
+          <h2>История пути</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <span class="year-badge">2023</span>
+            <h2>Начало пути</h2>
+            <p>Ты — первокурсник, которого только взяли в Пресс-центр. Стеснительный корреспондент и дизайнер, который всё рисует на планшете. А помнишь свой первый репортаж?</p>
+            <a href="https://vkvideo.ru/video-38200854_456239244" target="_blank" class="btn-link">Посмотреть первый репортаж →</a>
+            <p class="italic-text">
+              Соня с Настей долго не могли определиться, стоит ли брать тебя в команду. А на последнем собрании, сидя в Песках, Настя, отвечая на вопрос «Кто первый уйдёт из ПЦ?», сказала: «Тимур Магжанов». Знал бы тогда кто-нибудь, каким ты станешь в будущем…
+              Проходит время, ты берёшь перерыв, но возвращаешься к работе — уже более уверенный и взрослый. Это был важный шаг.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span class="year-badge">2024</span>
+            <h2>Точка сбора</h2>
+            <p>Лиза Степура организовала собрание дизайнеров и заметила тебя. Спустя пару месяцев ты стал куратором дизайна. Как хорошо, что к тому времени появился ноутбук…</p>
+            <p class="italic-text">
+              А в сентябре — «Точка сбора», два месяца жизни у Сони и долгожданная победа. Ты помогал команде и прокачал свои навыки. Стать частью лучшей медиакоманды — настоящая гордость.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span class="year-badge">2025</span>
+            <h2>Руководитель и «Профит»</h2>
+            <p>Ты стал руководителем большой медиакоманды. Теперь уже не дизайнер, корреспондент или фотограф, даже не куратор, ты становишься тем, кто задаёт направление, принимает решения и вдохновляет ребят.</p>
+            <p class="italic-text">
+              Почти сразу же ты стал главным организатором «Профита» и привёз известного блогера в Карелию — это был твой первый серьёзный вызов на посту. 
+              Первый выезд без взрослых не прошёл без проблем, но ты все решил, а ребятам всё понравилось.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <span class="year-badge">2026</span>
+            <h2>Новый этап</h2>
+            <p>Заканчивается твоя история в Пресс-центре ППОО ПетрГУ, но дальше у тебя длинный и насыщенный путь. Спасибо за эти годы, Тимур.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="memories-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Фото на память</h2>
+          <p>Снимки и важные слова от тех, кто был рядом все эти годы.</p>
+        </div>
+        <div class="gallery-grid" id="memoriesGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="friends-words">
+      <div class="container">
+        <div class="section-title">
+          <h2>Слова от близких</h2>
+        </div>
+        <div class="friends-grid">
+          <blockquote class="friend-note reveal"><p>"Ждем твой красивый текст здесь..."</p><cite>Настя Русакова</cite></blockquote>
+          <blockquote class="friend-note reveal"><p>"Ждем твой красивый текст здесь..."</p><cite>Женя Рябова</cite></blockquote>
+          <blockquote class="friend-note reveal"><p>"Ждем твой красивый текст здесь..."</p><cite>Лиза Степура</cite></blockquote>
+          <blockquote class="friend-note reveal"><p>"Ждем твой красивый текст здесь..."</p><cite>Соня Самохина</cite></blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 | Пресс-центр ППОО ПетрГУ</p>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="closeLightbox">×</button>
+    <img id="lightboxImage" src="" alt="" />
+    <p id="lightboxCaption"></p>
+  </dialog>
+
+  <script src="photos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
